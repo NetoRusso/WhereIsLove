@@ -1,0 +1,201 @@
+html{
+    width: 100%;
+    max-width: 100vw;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,
+footer,
+aside,
+main{
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Wheresthelove-2016.jpg/220px-Wheresthelove-2016.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    padding: 10px 0;
+    position: fixed;
+    margin-bottom: 32px;
+}
+
+.barraLateralEsquerda {
+    padding: 140px 20px 20px 20px;
+    width: 20%;
+    z-index: 1;
+    background-color: #000;
+    margin-top: 200px;
+    height: 100vh;
+    position: fixed;
+}
+
+.barraLateralDireita {
+    width: 20%;
+    z-index: 1;
+    background-color: #000;
+    margin-top: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.curta {
+    width: 80%;
+    height: auto;
+    margin: 50px;
+}
+
+.barraLateralDireita iframe {
+    margin-right: 1em;
+}
+
+.central {
+    width: 100vw;
+    display: flex;
+
+}
+
+.descricao {
+    color: antiquewhite;
+    margin-left: 20px;
+    margin-top: -50px;
+}
+
+.descricao dt {
+    font-size: 20px;
+    font-weight: 700;
+    filter: drop-shadow(-3px 3px 5px rgba(139, 2, 2, 1));
+}
+
+.descricao dd {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+.descricao ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: -20px;
+}
+
+.descricao li {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+main {
+    flex: 60%;
+}
+
+main p{
+    padding-bottom: 100px;
+}
+
+.conteudo {
+    margin-top: 200px;
+    z-index: -1;
+    
+}
+
+.bannerInterno {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://jpimg.com.br/uploads/2017/11/archives/2016/04/07/1115155576-black-eyes-peas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 200px;
+}
+
+.letra {
+    max-width: 100%;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.esquerda{
+    text-align: right;
+}
+
+.direita {
+    text-align: left;
+}
+
+.direita h3 {
+    padding-left: 20px;
+}
+
+
+pre {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .banner{
+        background-attachment: fixed;
+    }
+
+    .barraLateralEsquerda {
+        width: 30%;
+        z-index: 1;
+        height: 100vh;
+    }
+
+    .barraLateralDireita {
+        width: 20%;
+        z-index: 1;
+        background-color: #000;
+        margin-top: 200px;
+        height: 100vh;
+        position: fixed;
+        left: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+}
+
+footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
