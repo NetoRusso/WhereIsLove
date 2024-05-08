@@ -48,7 +48,6 @@ main{
     width: 20%;
     z-index: 1;
     background-color: #000;
-    margin-top: 200px;
     height: 100vh;
     position: fixed;
     left: 80vw;
